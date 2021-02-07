@@ -1,0 +1,30 @@
+
+#search{
+    background-color: mediumblue;
+    text-align:center;
+    padding: 10px;
+    margin:50px 0;
+}
+#foods-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+#ingredients{
+    text-align:center;
+    border-radius: 15px;
+}
+.food img, .info-ingredient img {
+    width:200px;
+    border-radius: 10px;
+}
+.info-ingredient img {
+    width:450px;
+}
+.food  {
+    text-align:center;
+    border:5px solid gray;
+    border-radius: 15px;
+    width:200px;
+    margin:50px;
+}
+
