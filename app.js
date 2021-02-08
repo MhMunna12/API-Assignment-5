@@ -19,6 +19,7 @@ const displayFood = link => {
         .then(data => {
             const foods = data['meals'];
             const foodsContainer = document.getElementById('foods-container');
+            foodsContainer.innerHTML = '';
             foods.forEach(food => {  
                 const foodDiv = document.createElement('div');      
                 foodDiv.className = "food" 
@@ -49,7 +50,6 @@ const displayFood = link => {
                         <p>${food.strIngredient7} : ${food.strMeasure7}</p>
                         <p>${food.strIngredient8} : ${food.strMeasure8}</p>
 
-                        <ul id="ingredients-ul"></ul>
                     `
                     ingredients.appendChild(infoIngredient);  
                 });
